@@ -1,4 +1,4 @@
 module.exports = {
-    API_KEY_RM_BG: "63ECBVNPGLewNmDh1FDxq2pC",
-    API_KEY_OPEN_AI: "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"
+    API_KEY_RM_BG: "HY6SvsZb4H5qQhmVgtDZ6uPk",
+    API_KEY_OPEN_AI: "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"
 }

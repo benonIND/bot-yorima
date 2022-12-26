@@ -28,23 +28,12 @@ client.on('message', async msg => {
         msg.reply('pong');
     }
 
-    if( text === "help" || text === "Help" ) {
-        let message = `
-        hay apakah anda butuh bantuan ?\n
-        mungkin saya dapat membantu anda\n
-        ini adalah caranya jika anda meminta bantuan saya\n
-        list format text:\n
-        => ask = pertanyaan anda
-        `
-        msg.reply(message);
-    }
-
     // edit_bg/bg_color
-    if (text.includes("#edit_bg/")) {
+    if (text.includes("edit_bg=") || text.includes("Edit_bg=") || text.includes("edit_bg =") || text.includes("Edit_bg =")) {
         await EditPhotoHandler(text, msg);
     }
     // #ask/question?
-    if ( text.includes("ask=") || text.includes("Ask=") || text.includes("ask =") || text.includes("Ask =") ) {
+    if (text.includes("ask=") || text.includes("Ask=") || text.includes("ask =") || text.includes("Ask =") ) {
         await ChatAIHandler(text, msg);
     }
 

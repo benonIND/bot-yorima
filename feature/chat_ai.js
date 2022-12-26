@@ -6,7 +6,7 @@ const ChatAIHandler = async (text, msg) => {
     const cmd = text.split('=');
 
     if (cmd.length < 2) {
-        return msg.reply('Format Salah. ketik *ask = your question*');
+        return msg.reply('Format Salah. ketik *#ask/your question*');
     }
 
     msg.reply('sedang diproses, tunggu bentar ya.');

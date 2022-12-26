@@ -2,7 +2,7 @@ const axios = require('axios');
 const { API_KEY_RM_BG } = require('../config');
 
 const EditPhotoHandler = async (text, msg) => {
-    const cmd = text.split('/');
+    const cmd = text.split('=');
     if (cmd.length < 2) {
         return msg.reply('Format Salah. ketik *edit_bg/warna*');
     }
